@@ -8,11 +8,16 @@ import PropTypes from 'prop-types'
 const Button = (props) => {
     console.log(props);
     return (
-        <button style={{...props.style, backgroundColor: props.bgColor}} type={props.type} className={style.Button + ' btn'} onClick={(evt) => {
-            if (undefined !== props.onClick && typeof props.onClick === 'function') {
-                props.onClick('click');
-            }
-        }}>
+        <button style={{...props.style, color: props.color}} type={props.type}
+                className={`${style.Button} btn${
+                    undefined !== props.className ? ' ' + props.className : ''
+                }`}
+                onClick={(evt) => {
+                    if (undefined !== props.onClick && typeof props.onClick === 'function') {
+                        props.onClick('click');
+                    }
+                }}
+        >
             {undefined !== props.children ? props.children : props.text}
         </button>
     );
@@ -24,15 +29,16 @@ Button.propTypes = {
     text: PropTypes.string,
     children: PropTypes.any,
     type: PropTypes.oneOf(['button', 'reset', 'submit']).isRequired,
-    bgColor: PropTypes.string.isRequired,
+    color: PropTypes.string.isRequired,
     onClick: PropTypes.func.isRequired,
-    style: PropTypes.object
+    style: PropTypes.object,
+    className: PropTypes.oneOf(['primary', 'error'])
 }
 
 Button.defaultProps = {
     type: 'button',
     onClick: () => console.log("fonction default envoyée par l'enfant"),
-    bgColor: 'skyblue'
+    color: 'white'
 }
 
 export default Button;
