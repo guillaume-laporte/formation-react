@@ -1,0 +1,27 @@
+Plugins Visual Studio Code utiles
+---------------------------------
+auto close tag
+auto complete tag
+auto rename tag
+ES7+
+ESLint
+HTML CSS Support
+IntelliSense
+JS Snippet
+React Extension Pack
+React-Native for ES6/ES7
+React code snippets
+Typescript React code snippets
+Git Graph
+
+desorbaix.alexandre.free.fr/tjs2
+
+npx create-react-app app --template=typescript
+ca ira chercher le template : cra-template-typescript
+
+cd app
+npm start
+
+tsconfig.json : "noImplicitAny": true
+
+https://learngitbranching.js.org/?locale=fr_FR
