@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <Button><img alt="" src="./img/ok_sub.png" /> ok</Button>
-      <Button text="cancel"></Button>
+      <Button text="cancel" onClick={() => alert("cancel")}></Button>
     </div>
   );
   // <Button children={<div><img alt="" src="./img/ok_sub.png" /> <span>ok</span></div>}></Button> => {props.children}
