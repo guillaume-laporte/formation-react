@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 
 // Approche proche de TS (on peut facilement rajouter le typage, Button:XXX)
 const Button = (props) => {
-    console.log(props);
+    // console.log(props);
     return (
         <button style={{...props.style, color: props.color}} type={props.type}
                 className={`${style.Button} btn${

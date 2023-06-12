@@ -33,4 +33,4 @@ On peut répartir les components en 3 répertoires pour structurer :
 
 !! Faire le composent TS !!
 
-
+hook / useState / useEffect => Pas compris !
