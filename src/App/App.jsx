@@ -8,6 +8,7 @@ function App() {
   useEffect(() => {
     console.log("value post setCounter", counter);
     return () => {
+      // démontage du DOM
       // console.log("cleanup"); // effect
     };
   }, [counter]);

@@ -11,9 +11,7 @@ const Button = (props) => {
     const [isClicked, setIsClicked] = useState(false);
 
     useEffect(() => {
-        setTimeout(() => {
-        if (isClicked) { setIsClicked(false); }
-        }, 1000);
+        setTimeout(() => { if (isClicked) { setIsClicked(false); } }, 400);
     }, [isClicked]);
 
     return (
