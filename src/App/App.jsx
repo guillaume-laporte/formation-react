@@ -14,6 +14,7 @@ function App() {
   // <Button text="cancel"></Button> => {props.text}
   // <Button style={{fontSize: '48pt'}}>AAA</Button> => {props.text}
   // <Button bgColor='tomato' text="cancel"></Button>
+  // <Button onClick={(unParamDeLenfant) => console.log("validate - ", unParamDeLenfant)}>validate</Button>
 }
 
 export default App;
