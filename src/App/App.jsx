@@ -18,20 +18,6 @@ function App() {
   }, []);
   console.log("rendu");
 
-  const [isClicked, setIsClicked] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => {
-      console.log("test");
-      if (isClicked) {
-        setIsClicked(false);
-      }
-    }, 1000);
-    return () => {
-      // console.log("cleanup"); // effect
-    };
-  }, [isClicked]);
-
   return (
     <div className="App">
       Voici la valeur de counter : {counter}
@@ -44,9 +30,6 @@ function App() {
         setcounter(counter + 1);
         console.log(counter);
       }}>+1</Button>
-      <Button isClicked={isClicked} onClick={() => {
-        setIsClicked(true);
-      }}>effect clicked</Button>
     </div>
   );
   // <Button children={<div><img alt="" src="./img/ok_sub.png" /> <span>ok</span></div>}></Button> => {props.children}

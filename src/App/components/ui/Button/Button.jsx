@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import style from './Button.module.css'
 import PropTypes from 'prop-types'
 
@@ -7,14 +7,30 @@ import PropTypes from 'prop-types'
 // Approche proche de TS (on peut facilement rajouter le typage, Button:XXX)
 const Button = (props) => {
     // console.log(props);
+
+    const [isClicked, setIsClicked] = useState(false);
+
+    useEffect(() => {
+        setTimeout(() => {
+        console.log("test");
+        if (isClicked) {
+            setIsClicked(false);
+        }
+        }, 1000);
+        return () => {
+        // console.log("cleanup"); // effect
+        };
+    }, [isClicked]);
+
     return (
         <button style={{...props.style, color: props.color}} type={props.type}
                 className={`${style.Button} btn${
                     undefined !== props.className ? ' ' + props.className : ''
                 } ${
-                    undefined !== props.isClicked && props.isClicked ? ' ' + style.clicked : ''
+                    true === isClicked ? ' ' + style.clicked : ''
                 }`}
                 onClick={(evt) => {
+                    setIsClicked(true);
                     if (undefined !== props.onClick && typeof props.onClick === 'function') {
                         props.onClick('click');
                     }
