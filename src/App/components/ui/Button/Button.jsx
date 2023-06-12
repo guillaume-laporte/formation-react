@@ -10,7 +10,7 @@ const Button = (props) => {
     return (
         <button type={props.type} className={style.Button + ' btn'} onClick={(evt) => {
             if (undefined !== props.onClick && typeof props.onClick === 'function') {
-                props.onClick();
+                props.onClick('click');
             }
         }}>
             {undefined !== props.children ? props.children : props.text}
@@ -29,7 +29,7 @@ Button.propTypes = {
 
 Button.defaultProps = {
     type: 'button',
-    onClick: () => console.log('coucou')
+    onClick: () => console.log("coucou")
 }
 
 export default Button;
