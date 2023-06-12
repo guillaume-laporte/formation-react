@@ -28,3 +28,9 @@ https://github.com/champix56/2023-06-12-tjs : faire un fork à la fin
 npm i -g yarn
 imr : raccourci pour importer react dans visual studio code
 
+On peut répartir les components en 3 répertoires pour structurer :
+- ui / fonctionnal / layout
+
+!! Faire le composent TS !!
+
+

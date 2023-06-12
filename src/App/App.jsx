@@ -1,12 +1,11 @@
 import React from 'react';
 import './App.css';
-import Button from '../Button/Button'
+import Button from './components/ui/Button/Button'
 
 function App() {
   return (
     <div className="App">
-      DEMAT breizh <br/>
-      <Button></Button>
+      <Button></Button> <Button></Button>
     </div>
   );
 }
