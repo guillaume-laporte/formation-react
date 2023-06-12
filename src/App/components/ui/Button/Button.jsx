@@ -1,17 +1,24 @@
 import React from 'react';
 import style from './Button.module.css'
+import PropTypes from 'prop-types'
 
 // function Button() {}
 
-// approche proche de TS (on peut facilement rajouter le typage, Button:XXX)
+// Approche proche de TS (on peut facilement rajouter le typage, Button:XXX)
 const Button = (props) => {
     console.log(props);
     return (
-        <button className={style.Button + ' btn'}>
+        <button type={props.type} className={style.Button + ' btn'}>
             {undefined !== props.children ? props.children : props.text}
         </button>
     );
-    // return <><button>Benjamin</button><button>Benjamin</button></>
+    // return <><button>Benjamin</button><button>Benjamin</button></> => balise vide car un seul premier niveau obligatoire
+}
+
+Button.propTypes = {
+    text: PropTypes.string,
+    children: PropTypes.any,
+    type: PropTypes.oneOf(['button', 'reset', 'submit']).isRequired
 }
 
 export default Button;
