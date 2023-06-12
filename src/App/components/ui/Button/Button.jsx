@@ -11,6 +11,8 @@ const Button = (props) => {
         <button style={{...props.style, color: props.color}} type={props.type}
                 className={`${style.Button} btn${
                     undefined !== props.className ? ' ' + props.className : ''
+                } ${
+                    undefined !== props.isClicked && props.isClicked ? ' ' + style.clicked : ''
                 }`}
                 onClick={(evt) => {
                     if (undefined !== props.onClick && typeof props.onClick === 'function') {
