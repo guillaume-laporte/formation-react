@@ -12,14 +12,8 @@ const Button = (props) => {
 
     useEffect(() => {
         setTimeout(() => {
-        console.log("test");
-        if (isClicked) {
-            setIsClicked(false);
-        }
+        if (isClicked) { setIsClicked(false); }
         }, 1000);
-        return () => {
-        // console.log("cleanup"); // effect
-        };
     }, [isClicked]);
 
     return (
