@@ -45,6 +45,13 @@ npx generate-react-cli (pour générer les components automatique comme angular)
 -> npx generate-react-cli c TemplateName
 -> dans le generate-react-cli.json on peut rajouter des sections pour créer des template a partir de modèle qu'on a créé nous même, et les placer dans le répertoire ou on le souhaite
 -> npx generate-react-cli c --type=xxx Cmp1 Cmp2
+-> npx generate-react-cli c --type=layoutFunc FlexV3Grow FlexH1Grow
+-> on peut faire un script dans package.json
+-> "gen_ui": "npx generate-react-cli c --type=uiFunc",
+-> "gen_layout": "npx generate-react-cli c --type=layoutFunc",
+-> "gen_generic": "npx generate-react-cli c --type=genericHookedFunc"
+-> yarn gen_ui NavBar Header Footer MemeThumbnail
+-> yarn gen_generic MemeForm
 
 lancer les tests : yarn test
 
