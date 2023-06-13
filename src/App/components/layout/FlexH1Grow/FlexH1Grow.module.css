@@ -1,3 +1,7 @@
 .FlexH1Grow {
     display: flex;
 }
+
+.FlexV3Grow > *:nth-child(1) {
+    flex-grow: 1;
+}

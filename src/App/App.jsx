@@ -5,7 +5,7 @@ import NavBar from './components/ui/NavBar/NavBar'
 import FlexH1Grow from './components/layout/FlexH1Grow/FlexH1Grow'
 import { MemeSVGViewer, emptyMeme } from 'orsys-tjs-meme'
 import Footer from './components/ui/Footer/Footer'
-import MemeForm from './components/MemeForm/MemeForm'
+import MemeForm from './components/fonctionnal/MemeForm/MemeForm'
 
 const App = () => {
   return (

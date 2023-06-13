@@ -55,7 +55,7 @@ npx generate-react-cli (pour générer les components automatique comme angular)
 
 lancer les tests : yarn test
 
-faire une storie (cours avancée) = npx storybook init
+faire une story (cours avancé) = npx storybook init
 -> npm run storybook
 -> http://localhost:6006/?path=/story/templatename--default
 
@@ -64,3 +64,5 @@ yarn = npm run
 yarn add orsys-tjs-meme
 yarn add bootstrap
 yarn add react-bootstrap
+
+ie edge -> react devtools
