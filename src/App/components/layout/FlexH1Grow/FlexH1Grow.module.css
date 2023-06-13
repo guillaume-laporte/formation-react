@@ -1,1 +1,3 @@
-.FlexH1Grow {}
+.FlexH1Grow {
+    display: flex;
+}

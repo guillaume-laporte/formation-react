@@ -1,47 +1,26 @@
-import React, {useState, useEffect} from 'react';
-import './App.css';
-import Button from './components/ui/Button/Button'
+import React from 'react'
+import FlexV3Grow from './components/layout/FlexV3Grow/FlexV3Grow'
+import Header from './components/ui/Header/Header'
+import NavBar from './components/ui/NavBar/NavBar'
+import FlexH1Grow from './components/layout/FlexH1Grow/FlexH1Grow'
+import { MemeSVGViewer, emptyMeme } from 'orsys-tjs-meme'
+import Footer from './components/ui/Footer/Footer'
+import MemeForm from './components/MemeForm/MemeForm'
 
-function App() {
-  const [counter, setcounter] = useState(0);
-
-  // componentDidUpdate
-  useEffect(() => {
-    console.log("value post setCounter", counter);
-    return () => {
-      // démontage du DOM
-      // console.log("cleanup"); // effect
-    };
-  }, [counter]);
-
-  // componentDidMount
-  useEffect(() => {
-    console.log("création du composant, set des états initiaux");
-    setcounter(1);
-  }, []);
-
-  console.log("rendu");
-
+const App = () => {
   return (
     <div className="App">
-      Voici la valeur de counter : {counter}
-      <hr />
-      <Button className="error" onClick={() => {
-        setcounter(counter - 1);
-        console.log(counter);
-      }}>-1</Button>
-      <Button onClick={() => {
-        setcounter(counter + 1);
-        console.log(counter);
-      }}>+1</Button>
+      <FlexV3Grow>
+        <Header />
+        <NavBar />
+        <FlexH1Grow>
+          <MemeSVGViewer meme={emptyMeme} image={undefined} basePath='' />
+          <MemeForm />
+        </FlexH1Grow>
+        <Footer />
+      </FlexV3Grow>
     </div>
-  );
-  // <Button children={<div><img alt="" src="./img/ok_sub.png" /> <span>ok</span></div>}></Button> => {props.children}
-  // <Button><img alt="" src="./img/ok_sub.png" /> ok</Button> => => {props.children} aussi
-  // <Button text="cancel"></Button> => {props.text}
-  // <Button style={{fontSize: '48pt'}}>AAA</Button> => {props.text}
-  // <Button bgColor='tomato' text="cancel"></Button>
-  // <Button onClick={(unParamDeLenfant) => console.log("validate - ", unParamDeLenfant)}>validate</Button>
+  )
 }
 
-export default App;
+export default App

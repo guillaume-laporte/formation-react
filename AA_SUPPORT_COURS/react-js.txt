@@ -62,3 +62,5 @@ faire une storie (cours avancée) = npx storybook init
 yarn = npm run
 
 yarn add orsys-tjs-meme
+yarn add bootstrap
+yarn add react-bootstrap
