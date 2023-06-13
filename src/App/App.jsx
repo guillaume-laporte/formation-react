@@ -5,6 +5,7 @@ import Button from './components/ui/Button/Button'
 function App() {
   const [counter, setcounter] = useState(0);
 
+  // componentDidUpdate
   useEffect(() => {
     console.log("value post setCounter", counter);
     return () => {
@@ -13,10 +14,12 @@ function App() {
     };
   }, [counter]);
 
+  // componentDidMount
   useEffect(() => {
     console.log("création du composant, set des états initiaux");
     setcounter(1);
   }, []);
+
   console.log("rendu");
 
   return (

@@ -34,3 +34,9 @@ On peut répartir les components en 3 répertoires pour structurer :
 !! Faire le composent TS !!
 
 hook / useState / useEffect => Pas compris !
+
+https://github.com/React-Proto/react-proto
+
+npx generate-react-cli (pour générer les components automatique comme angular)
+-> par exemple le path : src/App/components
+-> npx generate-react-cli c TemplateName
