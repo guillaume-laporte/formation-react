@@ -30,6 +30,7 @@ https://github.com/champix56/2023-06-12-tjs : faire un fork à la fin
 npm i -g yarn
 imr : raccourci pour importer react dans visual studio code
 rfcp : raccourci pour créer un component dans visual studio code
+rxslice : raccourci pour créer un slice redux
 
 On peut répartir les components en 3 répertoires pour structurer :
 - ui / fonctionnal / layout
@@ -65,4 +66,6 @@ yarn add orsys-tjs-meme
 yarn add bootstrap
 yarn add react-bootstrap
 
-ie edge -> react devtools
+ie edge -> react devtools / redux devtools
+
+yarn add @reduxjs/toolkit react-redux

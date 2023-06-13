@@ -125,3 +125,27 @@ MemeForm.propTypes = {
 MemeForm.defaultProps = {};
 
 export default MemeForm;
+
+/*
+export const ConnectedMemeForm = (props) => {
+  const currentMeme = useSelector(s => s)
+  const storeDispatch = useDispatch();
+  return (
+    <MemeForm {...props} current={currentMeme} onMemeChange={(meme) => {
+      storeDispatch({ type: 'current/update', payload: meme })
+    }} />
+  )
+}
+*/
+
+/*
+function mapStateToProps(storeState,ownProps){
+    return {...props,current:storeState} 
+}
+function mapDispatchToProps(storeDispatch){
+  return {onMemeChange:(meme)=>{
+    storeDispatch({type:'current/update', payload:meme})
+  }}
+}
+export const ConnectedMemeForm=connect(mapStateToProps,mapDispatchToProps)(MemeForm)
+*/
