@@ -13,6 +13,8 @@ React-Native for ES6/ES7
 React code snippets
 Typescript React code snippets
 Git Graph
+Jest Test Explorer
+Jest Snippets
 
 desorbaix.alexandre.free.fr/tjs2
 
@@ -40,3 +42,5 @@ https://github.com/React-Proto/react-proto
 npx generate-react-cli (pour générer les components automatique comme angular)
 -> par exemple le path : src/App/components
 -> npx generate-react-cli c TemplateName
+
+lancer les tests : yarn test
