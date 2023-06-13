@@ -44,3 +44,9 @@ npx generate-react-cli (pour générer les components automatique comme angular)
 -> npx generate-react-cli c TemplateName
 
 lancer les tests : yarn test
+
+faire une storie (cours avancée) = npx storybook init
+-> npm run storybook
+-> http://localhost:6006/?path=/story/templatename--default
+
+yarn = npm run
