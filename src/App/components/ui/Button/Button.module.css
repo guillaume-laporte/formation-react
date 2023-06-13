@@ -1,7 +1,8 @@
 .Button {
     padding: 5px 10px;
     background-color: skyblue;
-    color: white;
+    /* color: white; */
+    color: black !important;
     font-weight: 700;
     text-decoration: underline;
     border: none;
