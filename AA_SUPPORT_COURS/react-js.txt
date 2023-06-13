@@ -29,6 +29,7 @@ https://learngitbranching.js.org/?locale=fr_FR
 https://github.com/champix56/2023-06-12-tjs : faire un fork à la fin
 npm i -g yarn
 imr : raccourci pour importer react dans visual studio code
+rfcp : raccourci pour créer un component dans visual studio code
 
 On peut répartir les components en 3 répertoires pour structurer :
 - ui / fonctionnal / layout
@@ -42,6 +43,8 @@ https://github.com/React-Proto/react-proto
 npx generate-react-cli (pour générer les components automatique comme angular)
 -> par exemple le path : src/App/components
 -> npx generate-react-cli c TemplateName
+-> dans le generate-react-cli.json on peut rajouter des sections pour créer des template a partir de modèle qu'on a créé nous même, et les placer dans le répertoire ou on le souhaite
+-> npx generate-react-cli c --type=xxx Cmp1 Cmp2
 
 lancer les tests : yarn test
 
