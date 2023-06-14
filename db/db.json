@@ -34,6 +34,13 @@
       "url": "https://i.insider.com/5e74de0b235c1801f042b048?width=750&format=jpeg&auto=webp",
       "w": 750,
       "h": 562
+    },
+    {
+      "id": 5,
+      "titre": "new image edit",
+      "url": "https://t4.ftcdn.net/jpg/02/24/11/57/240_F_224115780_2ssvcCoTfQrx68Qsl5NxtVIDFWKtAgq2.jpg",
+      "w": 543,
+      "h": 240
     }
   ],
   "memes": [
@@ -171,21 +178,6 @@
       "frameSizeX": 0,
       "frameSizeY": 101,
       "id": 8
-    },
-    {
-      "titre": "",
-      "text": "",
-      "x": 0,
-      "y": 20,
-      "fontWeight": "500",
-      "fontSize": 20,
-      "underline": false,
-      "italic": true,
-      "imageId": -1,
-      "color": "#000000",
-      "frameSizeX": 0,
-      "frameSizeY": 0,
-      "id": 9
     }
   ]
 }

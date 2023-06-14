@@ -69,3 +69,10 @@ yarn add react-bootstrap
 ie edge -> react devtools / redux devtools
 
 yarn add @reduxjs/toolkit react-redux
+
+yarn add json-server
+-> lancer un server sur un fichier json pour simuler
+-> ajout dans package.json : "json": "json-server -p 7777 db/db.json"
+-> npm run json / yarn json :  pour lancer le server
+
+yarc : client REST à installer dans Chrome
