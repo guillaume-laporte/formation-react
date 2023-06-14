@@ -8,6 +8,13 @@
       "h": 240
     },
     {
+      "id": 666,
+      "titre": "scpo",
+      "url": "https://www.sciencespo.fr/fr/static/4e8c8b615cdf25da682418334c3751b6/sciencespo_logo_rouge_176c18a710.svg",
+      "w": 543,
+      "h": 240
+    },
+    {
       "id": 1,
       "titre": "deformed",
       "url": "https://wallpapers.com/images/featured/r8l2gifvpdd0kt25.jpg",
@@ -47,13 +54,13 @@
     {
       "titre": "React n'roll",
       "text": "coucou",
-      "x": 600,
-      "y": 20,
+      "x": 250,
+      "y": 66,
       "fontWeight": "500",
-      "fontSize": 600,
+      "fontSize": 26,
       "underline": true,
       "italic": true,
-      "imageId": 1,
+      "imageId": 666,
       "color": "#a80000",
       "frameSizeX": 0,
       "frameSizeY": 600,
@@ -77,13 +84,13 @@
     {
       "titre": "",
       "text": "tyrhrfed",
-      "x": 18,
-      "y": 20,
+      "x": 43,
+      "y": 109,
       "fontWeight": "500",
-      "fontSize": 30,
+      "fontSize": 66,
       "underline": false,
       "italic": false,
-      "imageId": 2,
+      "imageId": 666,
       "color": "#9a4c4c",
       "frameSizeX": 0,
       "frameSizeY": 0,
@@ -103,6 +110,21 @@
       "frameSizeX": 0,
       "frameSizeY": 0,
       "id": 3
+    },
+    {
+      "titre": "Sciences po",
+      "text": "Youhouuuu SCPO",
+      "x": 0,
+      "y": 76,
+      "fontWeight": "500",
+      "fontSize": 30,
+      "underline": true,
+      "italic": true,
+      "imageId": 666,
+      "color": "#0f658a",
+      "frameSizeX": 0,
+      "frameSizeY": 0,
+      "id": 999
     },
     {
       "titre": "",
@@ -208,6 +230,21 @@
       "frameSizeX": 0,
       "frameSizeY": 0,
       "id": 10
+    },
+    {
+      "titre": "Sciences po",
+      "text": "Youhouuuu SCPO",
+      "x": 0,
+      "y": 76,
+      "fontWeight": "500",
+      "fontSize": 30,
+      "underline": true,
+      "italic": true,
+      "imageId": 666,
+      "color": "#0f658a",
+      "frameSizeX": 0,
+      "frameSizeY": 0,
+      "id": 11
     }
   ]
 }
