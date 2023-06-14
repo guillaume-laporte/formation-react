@@ -178,6 +178,36 @@
       "frameSizeX": 0,
       "frameSizeY": 101,
       "id": 8
+    },
+    {
+      "titre": "test gla",
+      "text": "test gla 2",
+      "x": 32,
+      "y": 323,
+      "fontWeight": "600",
+      "fontSize": 35,
+      "underline": true,
+      "italic": true,
+      "imageId": 3,
+      "color": "#a24444",
+      "frameSizeX": 0,
+      "frameSizeY": 0,
+      "id": 9
+    },
+    {
+      "titre": "NEW NEW NEW",
+      "text": "Ca fonctionne !!!!",
+      "x": 142,
+      "y": 13,
+      "fontWeight": "500",
+      "fontSize": 35,
+      "underline": true,
+      "italic": true,
+      "imageId": 0,
+      "color": "#982f2f",
+      "frameSizeX": 0,
+      "frameSizeY": 0,
+      "id": 10
     }
   ]
 }

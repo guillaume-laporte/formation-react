@@ -5,9 +5,11 @@ import NavBar from './components/ui/NavBar/NavBar'
 import FlexH1Grow from './components/layout/FlexH1Grow/FlexH1Grow'
 import { MemeSVGViewer, emptyMeme } from 'orsys-tjs-meme'
 import Footer from './components/ui/Footer/Footer'
-import MemeForm from './components/fonctionnal/MemeForm/MemeForm'
+import MemeForm, { MemeFormStoredConnected } from './components/fonctionnal/MemeForm/MemeForm'
 import datas from './db.json'
 import store from './store/store'
+import { fetchAllRessources } from './store/ressourcesSlice'
+import { MemeSVGViewerStoredConnected } from './components/fonctionnal/MemeSVGViewerStoredConnected/MemeSVGViewerStoredConnected'
 
 const appInitialState = {
   images: [],
@@ -21,6 +23,7 @@ const App = () => {
   // chargement des datas pour 1er montage (fetch si besoin)
   useEffect(() => {
     // componentDidMount
+    store.dispatch(fetchAllRessources());
     console.log(`composant App monté`);
     setstate({...state, ...datas});
     // setstate({...state, current.titre: "rrrr"})
@@ -35,19 +38,27 @@ const App = () => {
         <Header />
         <NavBar />
         <FlexH1Grow>
-          <MemeSVGViewer
-          meme={state.current}
-          image={state.images.find(img => img.id === state.current.imageId)}
-          basePath='' />
-          <MemeForm
-          images={datas.images}
-          current={state.current}
-          onMemeChange={(meme) => setstate({...state, current: meme})} />
+          <MemeSVGViewerStoredConnected basePath='' />
+          <MemeFormStoredConnected />
         </FlexH1Grow>
         <Footer />
       </FlexV3Grow>
     </div>
   )
 }
+
+/*
+<MemeSVGViewer
+meme={state.current}
+image={state.images.find(img => img.id === state.current.imageId)}
+basePath='' />
+*/
+
+/*
+<MemeForm
+images={datas.images}
+current={state.current}
+onMemeChange={(meme) => setstate({...state, current: meme})} />
+*/
 
 export default App

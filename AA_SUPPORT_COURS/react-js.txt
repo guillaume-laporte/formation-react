@@ -65,6 +65,7 @@ yarn = npm run
 yarn add orsys-tjs-meme
 yarn add bootstrap
 yarn add react-bootstrap
+yarn add react-router-dom
 
 ie edge -> react devtools / redux devtools
 
