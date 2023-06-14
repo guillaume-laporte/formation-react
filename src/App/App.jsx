@@ -10,6 +10,9 @@ import datas from './db.json'
 import store from './store/store'
 import { fetchAllRessources } from './store/ressourcesSlice'
 import { MemeSVGViewerStoredConnected } from './components/fonctionnal/MemeSVGViewerStoredConnected/MemeSVGViewerStoredConnected'
+import { Route, Routes } from 'react-router-dom'
+import Editor from './pages/editor'
+import MemeThumbnail, { MemeThumbnailStoredConnected } from './components/ui/MemeThumbnail/MemeThumbnail'
 
 const appInitialState = {
   images: [],
@@ -37,10 +40,12 @@ const App = () => {
       <FlexV3Grow>
         <Header />
         <NavBar />
-        <FlexH1Grow>
-          <MemeSVGViewerStoredConnected basePath='' />
-          <MemeFormStoredConnected />
-        </FlexH1Grow>
+        <Routes>
+          <Route path='/' element={<div><h1>Hello à tous</h1></div>} />
+          <Route path='/thumbnail' element={<MemeThumbnailStoredConnected />} />
+          <Route path='/meme' element={<Editor />} />
+          <Route path='/meme/:id' element={<Editor />} />
+        </Routes>
         <Footer />
       </FlexV3Grow>
     </div>

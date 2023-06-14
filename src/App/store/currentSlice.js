@@ -8,8 +8,14 @@ const currentSlice = createSlice({
   name: 'current',
   initialState,
   reducers: {
-    update: (state, action) => Object.assign(state, action.payload),
-    clear: (state, action) => Object.assign(state, emptyMeme)
+    update: (state, action) => {
+      delete state.id;
+      Object.assign(state, action.payload);
+    },
+    clear: (state) => {
+      delete state.id;
+      Object.assign(state, emptyMeme);
+    }
   },
   extraReducers: (builder) => {
     builder.addCase('current/save/fulfilled', (state, action) => {
